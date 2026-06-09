@@ -91,6 +91,12 @@ const Login = () => {
             )}
           </button>
         </form>
+
+        <div className="mt-8 pt-6 border-t border-slate-100 flex justify-center space-x-4 text-xs text-slate-400">
+          <a href="/privacy-policy" className="hover:text-primary transition-colors">Privacy</a>
+          <a href="/terms-of-service" className="hover:text-primary transition-colors">Terms</a>
+          <a href="/refund-policy" className="hover:text-primary transition-colors">Refunds</a>
+        </div>
       </motion.div>
     </div>
   );

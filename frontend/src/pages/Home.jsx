@@ -249,6 +249,11 @@ const Home = () => {
           <p className="text-slate-400 mb-8 max-w-md mx-auto">
             Empowering educational institutions with modern technology.
           </p>
+          <div className="flex justify-center space-x-6 mb-8 text-sm text-slate-400">
+            <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link to="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
+            <Link to="/refund-policy" className="hover:text-white transition-colors">Refund Policy</Link>
+          </div>
           <div className="text-sm text-slate-500 pt-8 border-t border-slate-800">
             © 2026 EduStream Technologies. All rights reserved.
           </div>

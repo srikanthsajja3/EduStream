@@ -10,6 +10,9 @@ import Academics from './pages/Academics';
 import Attendance from './pages/Attendance';
 import Fees from './pages/Fees';
 import Layout from './components/Layout';
+import PrivacyPolicy from './pages/policies/PrivacyPolicy';
+import TermsOfService from './pages/policies/TermsOfService';
+import RefundPolicy from './pages/policies/RefundPolicy';
 
 const ProtectedRoute = ({ children }) => {
   const { user, loading } = useAuth();
@@ -75,6 +78,9 @@ function App() {
               </ProtectedRoute>
             } 
           />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/refund-policy" element={<RefundPolicy />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Router>
