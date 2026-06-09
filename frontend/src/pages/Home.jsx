@@ -15,30 +15,48 @@ import {
 } from 'lucide-react';
 
 const Home = () => {
-  const features = [
+  const comprehensiveModules = [
     {
-      title: 'Academic Management',
-      desc: 'Smart timetables, subject tracking, and automated exam reports.',
-      icon: BookOpen,
-      color: 'blue'
-    },
-    {
-      title: 'Fee Automation',
-      desc: 'Online payments, automated receipts, and arrears management.',
-      icon: CreditCard,
-      color: 'green'
-    },
-    {
-      title: 'Attendance System',
-      desc: 'Real-time student and staff tracking with instant parent alerts.',
-      icon: Calendar,
-      color: 'purple'
-    },
-    {
-      title: 'Analytics Dashboard',
-      desc: 'Visual insights into institutional performance and growth metrics.',
+      title: 'Dashboard',
       icon: BarChart3,
-      color: 'orange'
+      color: 'blue',
+      items: ['Admin Overview', 'Key Metrics', 'Live System Status']
+    },
+    {
+      title: 'Students',
+      icon: Users,
+      color: 'indigo',
+      items: ['Student Admission', 'Student Details', 'Admission Approval']
+    },
+    {
+      title: 'Teachers',
+      icon: ShieldCheck,
+      color: 'purple',
+      items: ['Add Teacher', 'Teacher Details', 'Assign Subjects', 'Assign Sections']
+    },
+    {
+      title: 'Academics',
+      icon: BookOpen,
+      color: 'pink',
+      items: ['Class & Sections', 'Subjects & Time Slots', 'Class Time Table', 'Teacher Time Table', 'Castes', 'Fee Structure', 'Bus Fee Structure']
+    },
+    {
+      title: 'Attendance',
+      icon: Calendar,
+      color: 'green',
+      items: ['Student Attendance', 'Teacher Attendance', 'Daily Reports']
+    },
+    {
+      title: 'Exams',
+      icon: CheckCircle,
+      color: 'orange',
+      items: ['Exams', 'Exam Schedule', 'Class-wise Marks', 'Marks Report', 'Rank List']
+    },
+    {
+      title: 'Accounts',
+      icon: CreditCard,
+      color: 'emerald',
+      items: ['Fee Details', 'Fee Collection', 'Payment Receipts']
     }
   ];
 
@@ -54,7 +72,7 @@ const Home = () => {
             <span className="font-bold text-2xl text-slate-900 tracking-tight">EduStream</span>
           </div>
           <div className="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
-            <a href="#features" className="hover:text-primary transition-colors">Features</a>
+            <a href="#modules" className="hover:text-primary transition-colors">Our Modules</a>
             <a href="#benefits" className="hover:text-primary transition-colors">Benefits</a>
             <Link to="/login" className="bg-primary text-white px-6 py-2.5 rounded-full hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
               Get Started
@@ -102,8 +120,8 @@ const Home = () => {
                 Log into Dashboard
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
-              <a href="#features" className="w-full sm:w-auto bg-slate-100 text-slate-700 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-slate-200 transition-all">
-                Explore Features
+              <a href="#modules" className="w-full sm:w-auto bg-slate-100 text-slate-700 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-slate-200 transition-all">
+                Explore Modules
               </a>
             </motion.div>
           </div>
@@ -114,25 +132,32 @@ const Home = () => {
         <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2 w-96 h-96 bg-indigo-100 rounded-full blur-3xl" />
       </section>
 
-      {/* Features Grid */}
-      <section id="features" className="py-24 bg-slate-50">
+      {/* Comprehensive Modules Grid */}
+      <section id="modules" className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Comprehensive Modules</h2>
-            <p className="text-slate-500 max-w-2xl mx-auto">Everything you need to manage your institution from admission to graduation.</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Everything You Need. All in One Place.</h2>
+            <p className="text-slate-500 max-w-2xl mx-auto">EduStream provides a complete suite of modules to handle every aspect of school administration seamlessly.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {features.map((feature, i) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {comprehensiveModules.map((module, i) => (
               <motion.div
                 key={i}
-                whileHover={{ y: -10 }}
-                className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition-all"
+                whileHover={{ y: -5 }}
+                className="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition-all"
               >
-                <div className={`w-14 h-14 rounded-2xl bg-${feature.color}-50 text-${feature.color}-600 flex items-center justify-center mb-6`}>
-                  <feature.icon className="w-8 h-8" />
+                <div className={`w-12 h-12 rounded-xl bg-${module.color}-50 text-${module.color}-600 flex items-center justify-center mb-4`}>
+                  <module.icon className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">{feature.title}</h3>
-                <p className="text-slate-500 text-sm leading-relaxed">{feature.desc}</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-4">{module.title}</h3>
+                <ul className="space-y-2">
+                  {module.items.map((item, idx) => (
+                    <li key={idx} className="flex items-start text-sm text-slate-600">
+                      <span className={`w-1.5 h-1.5 rounded-full bg-${module.color}-400 mt-1.5 mr-2 flex-shrink-0`}></span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
               </motion.div>
             ))}
           </div>
