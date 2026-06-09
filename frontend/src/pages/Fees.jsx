@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import api from '../lib/api';
 import { CreditCard, ArrowUpRight, ArrowDownRight, IndianRupee, Search, Receipt } from 'lucide-react';
 
 const Fees = () => {
@@ -14,8 +14,8 @@ const Fees = () => {
   const fetchFees = async () => {
     try {
       const [summaryRes, paymentsRes] = await Promise.all([
-        axios.get('http://localhost:5000/api/fees/summary'),
-        axios.get('http://localhost:5000/api/fees/payments')
+        api.get('/api/fees/summary'),
+        api.get('/api/fees/payments')
       ]);
       setSummary(summaryRes.data);
       setPayments(paymentsRes.data);

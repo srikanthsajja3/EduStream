@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import api from '../lib/api';
 import { Calendar as CalendarIcon, CheckCircle2, XCircle, Clock } from 'lucide-react';
 
 const Attendance = () => {
@@ -14,7 +14,7 @@ const Attendance = () => {
   const fetchAttendance = async (selectedDate) => {
     setLoading(true);
     try {
-      const res = await axios.get(`http://localhost:5000/api/attendance/${selectedDate}`);
+      const res = await api.get(`/api/attendance/${selectedDate}`);
       setAttendance(res.data);
     } catch (err) {
       console.error('Error fetching attendance:', err);

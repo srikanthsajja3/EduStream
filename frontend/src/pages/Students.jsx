@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import api from '../lib/api';
 import { Search, UserPlus, Filter, MoreVertical, GraduationCap } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -14,7 +14,7 @@ const Students = () => {
 
   const fetchStudents = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/students');
+      const res = await api.get('/api/students');
       setStudents(res.data);
     } catch (err) {
       console.error('Error fetching students:', err);

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import api from '../lib/api';
 import { Book, Clock, Calendar } from 'lucide-react';
 
 const Academics = () => {
@@ -22,7 +22,7 @@ const Academics = () => {
 
   const fetchClasses = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/classes');
+      const res = await api.get('/api/classes');
       setClasses(res.data);
     } catch (err) {
       console.error('Error fetching classes:', err);
@@ -32,7 +32,7 @@ const Academics = () => {
   const fetchTimetable = async (sectionId) => {
     setLoading(true);
     try {
-      const res = await axios.get(`http://localhost:5000/api/timetable/${sectionId}`);
+      const res = await api.get(`/api/timetable/${sectionId}`);
       setTimetable(res.data);
     } catch (err) {
       console.error('Error fetching timetable:', err);

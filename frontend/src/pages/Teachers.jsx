@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import api from '../lib/api';
 import { Search, UserPlus, Mail, Phone, MoreVertical } from 'lucide-react';
 
 const Teachers = () => {
@@ -13,7 +13,7 @@ const Teachers = () => {
 
   const fetchTeachers = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/teachers');
+      const res = await api.get('/api/teachers');
       setTeachers(res.data);
     } catch (err) {
       console.error('Error fetching teachers:', err);
