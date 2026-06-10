@@ -1,7 +1,7 @@
 {
   "name": "school-erp-next-gen",
   "version": "1.0.0",
-  "description": "EduStream School ERP Root",
+  "description": "VR EduStream School ERP Root",
   "scripts": {
     "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
     "dev": "concurrently \"npm run backend\" \"npm run frontend\"",

@@ -20,7 +20,7 @@ async function createTable() {
         console.log('Inserting sample notices...');
         await db.execute(`
             INSERT INTO notices (title, content, target_role, created_by) VALUES 
-            ('Welcome to EduStream ERP', 'We are excited to launch the new School Management System. Please explore the dashboard.', 'All', 'admin-id'),
+            ('Welcome to VR EduStream ERP', 'We are excited to launch the new School Management System. Please explore the dashboard.', 'All', 'admin-id'),
             ('Staff Meeting on Friday', 'There will be a mandatory staff meeting this Friday at 4 PM in the main hall.', 'Teacher', 'admin-id'),
             ('Fee Payment Deadline', 'Reminder: The deadline for Term 2 fee payment is approaching. Please ensure timely payment.', 'Parent', 'admin-id')
         `);

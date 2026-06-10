@@ -37,7 +37,7 @@ const Login = () => {
           <div className="bg-primary/10 p-3 rounded-xl mb-4">
             <School className="w-10 h-10 text-primary" />
           </div>
-          <h1 className="text-2xl font-bold text-slate-900">EduStream ERP</h1>
+          <h1 className="text-2xl font-bold text-slate-900">VR EduStream ERP</h1>
           <p className="text-slate-500">Sign in to your account</p>
         </div>
 

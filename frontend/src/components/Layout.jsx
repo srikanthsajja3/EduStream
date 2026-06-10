@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
           <div className="bg-primary p-2 rounded-lg">
             <School className="w-6 h-6 text-white" />
           </div>
-          <span className="font-bold text-xl text-slate-900">EduStream</span>
+          <span className="font-bold text-xl text-slate-900">VR EduStream</span>
         </div>
         
         <nav className="flex-1 p-4 space-y-2 mt-4">
@@ -137,7 +137,7 @@ const Layout = ({ children }) => {
                   <div className="bg-primary p-2 rounded-lg">
                     <School className="w-6 h-6 text-white" />
                   </div>
-                  <span className="font-bold text-xl text-slate-900">EduStream</span>
+                  <span className="font-bold text-xl text-slate-900">VR EduStream</span>
                 </div>
                 <button onClick={() => setIsMobileMenuOpen(false)}>
                   <X className="w-6 h-6 text-slate-500" />

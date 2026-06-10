@@ -7,7 +7,7 @@ const RefundPolicy = () => {
       
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-3">1. Fee Payment</h2>
-        <p>All school fees, once paid through the EduStream portal, are generally non-refundable. The admission fee and registration charges are strictly non-refundable under any circumstances.</p>
+        <p>All school fees, once paid through the VR EduStream portal, are generally non-refundable. The admission fee and registration charges are strictly non-refundable under any circumstances.</p>
       </section>
 
       <section className="mb-8">

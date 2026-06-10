@@ -4,16 +4,16 @@ const TermsOfService = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 text-gray-800">
       <h1 className="text-3xl font-bold mb-6">Terms and Conditions</h1>
-      <p className="mb-4">Welcome to EduStream. By accessing our platform, you agree to be bound by these terms.</p>
+      <p className="mb-4">Welcome to VR EduStream. By accessing our platform, you agree to be bound by these terms.</p>
 
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-3">1. Use of Service</h2>
-        <p>EduStream is provided to educational institutions for administrative management. Users (Parents, Students, Staff) must use the platform solely for its intended purpose. Any attempt to reverse engineer or disrupt the service is strictly prohibited.</p>
+        <p>VR EduStream is provided to educational institutions for administrative management. Users (Parents, Students, Staff) must use the platform solely for its intended purpose. Any attempt to reverse engineer or disrupt the service is strictly prohibited.</p>
       </section>
 
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-3">2. Messaging Consent (SMS & WhatsApp)</h2>
-        <p>By providing your mobile number, you authorize EduStream and the School to send:</p>
+        <p>By providing your mobile number, you authorize VR EduStream and the School to send:</p>
         <ul className="list-disc ml-6 space-y-2">
           <li>Attendance and emergency alerts.</li>
           <li>Fee reminders and payment confirmations.</li>
@@ -24,7 +24,7 @@ const TermsOfService = () => {
 
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-3">3. Payments & Fees</h2>
-        <p>Online fee payments are processed through third-party gateways. EduStream does not store your credit/debit card details. In case of transaction failure where funds are debited, the refund process is governed by our Refund Policy.</p>
+        <p>Online fee payments are processed through third-party gateways. VR EduStream does not store your credit/debit card details. In case of transaction failure where funds are debited, the refund process is governed by our Refund Policy.</p>
       </section>
 
       <section className="mb-8">
@@ -34,7 +34,7 @@ const TermsOfService = () => {
 
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-3">5. Limitation of Liability</h2>
-        <p>EduStream shall not be liable for any indirect, incidental, or consequential damages arising from the use or inability to use the platform, including technical delays in SMS/WhatsApp delivery or payment gateway downtimes.</p>
+        <p>VR EduStream shall not be liable for any indirect, incidental, or consequential damages arising from the use or inability to use the platform, including technical delays in SMS/WhatsApp delivery or payment gateway downtimes.</p>
       </section>
 
       <section className="mb-8">

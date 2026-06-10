@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
       
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-3">1. Introduction</h2>
-        <p>EduStream ("we," "us," or "our") provides a school management ERP system. We are committed to protecting the privacy of students, parents, and staff. This policy explains how we collect, use, and safeguard personal data in compliance with GDPR, COPPA, and the Digital Personal Data Protection (DPDP) Act.</p>
+        <p>VR EduStream ("we," "us," or "our") provides a school management ERP system. We are committed to protecting the privacy of students, parents, and staff. This policy explains how we collect, use, and safeguard personal data in compliance with GDPR, COPPA, and the Digital Personal Data Protection (DPDP) Act.</p>
       </section>
 
       <section className="mb-8">
@@ -54,7 +54,7 @@ const PrivacyPolicy = () => {
 
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-3">7. Contact Information</h2>
-        <p>For any privacy-related queries, please contact our Data Protection Officer at <strong>privacy@edustream.com</strong>.</p>
+        <p>For any privacy-related queries, please contact our Data Protection Officer at <strong>vrplay.sdtech@gmail.com</strong>.</p>
       </section>
     </div>
   );

@@ -69,7 +69,7 @@ const Home = () => {
             <div className="bg-primary p-1.5 rounded-lg">
               <School className="w-6 h-6 text-white" />
             </div>
-            <span className="font-bold text-2xl text-slate-900 tracking-tight">EduStream</span>
+            <span className="font-bold text-2xl text-slate-900 tracking-tight">VR EduStream</span>
           </div>
           <div className="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
             <a href="#modules" className="hover:text-primary transition-colors">Our Modules</a>
@@ -99,7 +99,7 @@ const Home = () => {
               transition={{ delay: 0.1 }}
               className="text-5xl md:text-7xl font-extrabold text-slate-900 leading-tight mb-8"
             >
-              Transform Your School with <span className="text-primary">EduStream</span>
+              Transform Your School with <span className="text-primary">VR EduStream</span>
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
@@ -137,7 +137,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Everything You Need. All in One Place.</h2>
-            <p className="text-slate-500 max-w-2xl mx-auto">EduStream provides a complete suite of modules to handle every aspect of school administration seamlessly.</p>
+            <p className="text-slate-500 max-w-2xl mx-auto">VR EduStream provides a complete suite of modules to handle every aspect of school administration seamlessly.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {comprehensiveModules.map((module, i) => (
@@ -244,7 +244,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 text-center">
           <div className="flex items-center justify-center space-x-2 mb-6">
             <School className="w-8 h-8 text-primary" />
-            <span className="font-bold text-2xl tracking-tight">EduStream</span>
+            <span className="font-bold text-2xl tracking-tight">VR EduStream</span>
           </div>
           <p className="text-slate-400 mb-8 max-w-md mx-auto">
             Empowering educational institutions with modern technology.
@@ -255,7 +255,7 @@ const Home = () => {
             <Link to="/refund-policy" className="hover:text-white transition-colors">Refund Policy</Link>
           </div>
           <div className="text-sm text-slate-500 pt-8 border-t border-slate-800">
-            © 2026 EduStream Technologies. All rights reserved.
+            © 2026 VR EduStream Technologies. All rights reserved.
           </div>
         </div>
       </footer>
