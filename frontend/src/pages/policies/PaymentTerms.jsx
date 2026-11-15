@@ -1,13 +1,13 @@
 import React from 'react';
 
-const RefundPolicy = () => {
+const PaymentTerms = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 text-gray-800">
       <h1 className="text-3xl font-bold mb-6">Refund and Cancellation Policy</h1>
       
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-3">1. Fee Payment</h2>
-        <p>All school fees, once paid through the VR EduStream portal, are generally non-refundable. The admission fee and registration charges are strictly non-refundable under any circumstances.</p>
+        <p>All school fees, once paid through the SD EduStream portal, are generally non-refundable. The admission fee and registration charges are strictly non-refundable under any circumstances.</p>
       </section>
 
       <section className="mb-8">
@@ -33,4 +33,4 @@ const RefundPolicy = () => {
   );
 };
 
-export default RefundPolicy;
+export default PaymentTerms;

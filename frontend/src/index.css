@@ -88,3 +88,33 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* VRPlay Hero Badge Styles */
+.vrplay-hero-badge {
+  @apply inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-slate-200 bg-white shadow-sm transition-all hover:shadow-md;
+}
+
+.vrplay-badge-dot {
+  @apply w-2 h-2 rounded-full bg-primary;
+  box-shadow: 0 0 8px var(--primary);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.vrplay-badge-text {
+  @apply text-xs font-bold text-slate-600 tracking-wide uppercase;
+}
+
+.vrplay-footer-tagline {
+  @apply font-semibold tracking-wide opacity-80 hover:opacity-100 transition-opacity;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: .5;
+    transform: scale(1.2);
+  }
+}

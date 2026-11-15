@@ -37,7 +37,7 @@ const Login = () => {
           <div className="bg-primary/10 p-3 rounded-xl mb-4">
             <School className="w-10 h-10 text-primary" />
           </div>
-          <h1 className="text-2xl font-bold text-slate-900">VR EduStream ERP</h1>
+          <h1 className="text-2xl font-bold text-slate-900">SD EduStream ERP</h1>
           <p className="text-slate-500">Sign in to your account</p>
         </div>
 
@@ -92,10 +92,16 @@ const Login = () => {
           </button>
         </form>
 
-        <div className="mt-8 pt-6 border-t border-slate-100 flex justify-center space-x-4 text-xs text-slate-400">
-          <a href="/privacy-policy" className="hover:text-primary transition-colors">Privacy</a>
-          <a href="/terms-of-service" className="hover:text-primary transition-colors">Terms</a>
-          <a href="/refund-policy" className="hover:text-primary transition-colors">Refunds</a>
+        <div className="mt-8 pt-6 border-t border-slate-100 flex flex-col items-center space-y-4">
+          <div className="vrplay-hero-badge">
+            <span className="vrplay-badge-dot"></span>
+            <span className="vrplay-badge-text">Powered by SD Technologies</span>
+          </div>
+          <div className="flex justify-center space-x-4 text-xs text-slate-400">
+            <a href="/privacy-policy" className="hover:text-primary transition-colors">Privacy</a>
+            <a href="/terms-of-service" className="hover:text-primary transition-colors">Terms</a>
+            <a href="/refund-policy" className="hover:text-primary transition-colors">Refunds</a>
+          </div>
         </div>
       </motion.div>
     </div>

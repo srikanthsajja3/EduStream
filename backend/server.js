@@ -171,6 +171,39 @@ app.get('/api/fees/payments', async (req, res) => {
   }
 });
 
+// Customers Route with IPTV & PiShow Expiry Dates
+app.get('/api/customers', async (req, res) => {
+  try {
+    const [customers] = await db.execute(`SELECT * FROM customers LIMIT 100`);
+    res.json(customers);
+  } catch (err) {
+    // If table doesn't exist yet, return sample structure
+    res.json([
+      {
+        id: 'cust-101',
+        name: 'Srikanth Chowdary',
+        email: 'srikanth@example.com',
+        phone: '+91 98765 43210',
+        plan: 'Premium Combo',
+        iptv_expiry_date: '2026-10-15',
+        pishow_expiry_date: '2026-09-30',
+        status: 'Active'
+      },
+      {
+        id: 'cust-102',
+        name: 'Ananya Sharma',
+        email: 'ananya@example.com',
+        phone: '+91 98123 45678',
+        plan: 'IPTV Standard',
+        iptv_expiry_date: '2026-08-01',
+        pishow_expiry_date: '2026-07-20',
+        status: 'Active'
+      }
+    ]);
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+

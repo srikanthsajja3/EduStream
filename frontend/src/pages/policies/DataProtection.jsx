@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PrivacyPolicy = () => {
+const DataProtection = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 text-gray-800">
       <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
       
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-3">1. Introduction</h2>
-        <p>VR EduStream ("we," "us," or "our") provides a school management ERP system. We are committed to protecting the privacy of students, parents, and staff. This policy explains how we collect, use, and safeguard personal data in compliance with GDPR, COPPA, and the Digital Personal Data Protection (DPDP) Act.</p>
+        <p>SD EduStream ("we," "us," or "our") provides a school management ERP system. We are committed to protecting the privacy of students, parents, and staff. This policy explains how we collect, use, and safeguard personal data in compliance with GDPR, COPPA, and the Digital Personal Data Protection (DPDP) Act.</p>
       </section>
 
       <section className="mb-8">
@@ -54,10 +54,10 @@ const PrivacyPolicy = () => {
 
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-3">7. Contact Information</h2>
-        <p>For any privacy-related queries, please contact our Data Protection Officer at <strong>vrplay.sdtech@gmail.com</strong>.</p>
+        <p>For any privacy-related queries, please contact our Data Protection Officer at <strong>SDplay.sdtech@gmail.com</strong>.</p>
       </section>
     </div>
   );
 };
 
-export default PrivacyPolicy;
+export default DataProtection;
